@@ -1,26 +1,20 @@
 var userInput = document.getElementById("userInput");
-userInput = 60;
-var timeRemaining;
-
-if(isNaN(userInput)){
-    console.log("lowkey this aint a number");
-}else{
-    timeRemaining = userInput;
-}
-
-var buttonActivate = document.getElementById("activationButton").addEventListener("click", beginCountDown());
+//userInput = 60; // some test code
+var buttonActivate = document.getElementById("activationButton").addEventListener("click", setInterval(beginCountDown, 1000));
 var buttonStop = document.getElementById("stopButton").addEventListener("click", stop());
-var buttonReset = document.getElementById("resetButton").addEventListener("click", beginCountDown(countDown));
+var buttonReset = document.getElementById("resetButton").addEventListener("click", reset());
 var stop = false;
-
-timeRemaining = userInput;
 function beginCountDown(){
-    while(timeRemaining > 0 && (shutdown == false)){
-        timeRemaining = timeRemaining - 1;
+    userInput--;
+    console.log("-1 second")
+    if(userInput == 0 || stop == true){
+        alert("yo ur times out lmao");
+        return;
     }
-    alert("yo ur times out lmao");
 }
 function stop(){
     stop = true;
 }
-
+function reset(){
+    userInput = 0;
+}
