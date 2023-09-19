@@ -18,4 +18,4 @@ function stop(){
 function reset(){
     userInput = 0;
 }
-//this is a test
+//this is a testing
