@@ -11,6 +11,11 @@ body,p{
     font-family:"Montserrat";
 }
 
+.container{
+    padding-left:50%;
+    padding-top:50%;
+    jusitfy-content:center;
+}
 .startButton{
     background-color:#5c5470;
     color:whitesmoke;
