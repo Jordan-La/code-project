@@ -14,7 +14,7 @@ body,p{
 .container{
     padding-left:50%;
     padding-top:50%;
-    jusitfy-content:center;
+    justify-content:center;
 }
 .startButton{
     background-color:#5c5470;
