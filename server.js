@@ -2,10 +2,10 @@
 const express = require("express"); 
 const app = express();
 app.get("/", function(req,res) {
-res.sendFile("/code-project/index.html");
+res.sendFile(__dirname + "/index.html");
 });
 app.post("/", function(req,res) {
-    res.sendFile("/code-project/index.html");
+    res.sendFile(__dirname + "/index.html");
 });
 
 app.listen(process.env.PORT, function() {
