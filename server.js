@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const express = require("express"); 
 const app = express();
 
@@ -12,6 +12,4 @@ app.post("/", function(req,res) {
 app.listen(process.env.PORT, function() {
     console.log(`Server is running on port ${process.env.PORT}.`);
 });
-=======
-lalala
->>>>>>> a60e9218ae5100610589954766ca16a18f56c559
+
