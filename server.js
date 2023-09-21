@@ -3,7 +3,7 @@ const app = express();
 
 app.get("/", function(req,res) {
     console.log("got client req");
-    res.sendFile("Jordan-La/code-project/index.html");
+    res.sendFile("/index.html");
 });
 app.post("/", function(req,res) {
     console.log("returning index");
