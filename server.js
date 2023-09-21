@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 app.get("/", function(req,res) {
     res.send("yo")
-	res.sendFile(__dirname + "/code-project/index.html");
+res.sendFile(__dirname + "/Jordan-La/code-project/index.html");
 });
 app.post("/", function(req,res) {
     res.sendFile(__dirname + "/code-project/index.html");
