@@ -35,7 +35,9 @@ function beginCountDown(){
     time--;
     console.log("1 second subtracted")
     if(time == 0 || stop == true){
+        console.log("final time: " + time);
         clearInterval(outputTime);
+        
         return userInput;
     }
 }
