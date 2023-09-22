@@ -1,4 +1,5 @@
-var userInput = document.getElementById("userInput").value;
+var userInput = document.getElementById("userInput");
+var time = userInput.value;
 //userInput = 60; // some test code
 var buttonActivate = document.getElementById("activationButton");
 var outputTime = 0;
@@ -24,10 +25,10 @@ buttonReset.addEventListener("click", function(){
 
 var stop = false;
 function beginCountDown(){
-    console.log("user inputted: " + userInput);
-    userInput--;
+    console.log("user inputted: " + time);
+    time--;
     console.log("1 second subtracted")
-    if(userInput == 0 || stop == true){
+    if(time == 0 || stop == true){
         clearInterval(outputTime);
         return userInput;
     }
