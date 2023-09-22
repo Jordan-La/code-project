@@ -2,7 +2,7 @@ var userInput = document.getElementById("userInput");
 var display = document.getElementById("display");
 var time = 0;
 var outputTime = 0;
-
+console.log("loaded");
 var buttonActivate = document.getElementById("activationButton");
 
 buttonActivate.addEventListener("click", function(){
