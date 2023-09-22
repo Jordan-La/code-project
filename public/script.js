@@ -30,9 +30,11 @@ function beginCountDown(){
     }
 }
 function stopTime(){
+        clearInterval(beginCountDown);
     stop = true;
 }
 function reset(){
+        clearInterval(beginCountDown);
 stop = true;
     userInput = 0;
 }
