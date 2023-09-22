@@ -13,8 +13,8 @@ setButton.addEventListener("click", function(){
 var buttonActivate = document.getElementById("activationButton");
 
 buttonActivate.addEventListener("click", function(){
+        time = userInput.value;
        outputTime = setInterval(beginCountDown, 1000)
-       display.innerHTML = time;
 });
     
 var buttonStop = document.getElementById("stopButton");
@@ -34,6 +34,7 @@ buttonReset.addEventListener("click", function(){
 var stop = false;
 function beginCountDown(){
     console.log("user inputted: " + time);
+    display.innerHTML = time;
     time--;
     console.log("1 second subtracted")
     if(time == 0 || stop == true){
