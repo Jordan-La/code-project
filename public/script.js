@@ -3,9 +3,9 @@ var time = userInput.value;
 var buttonActivate = document.getElementById("activationButton");
 var outputTime = 0;
 
-userInput.addEventListener("mouseleave", function(){
+userInput.addEventListener("mouseout", function(){
         time = userInput.value;
-        console.log("updated time inputted lmao");
+        console.log("updated time inputted lmao" + time);
 });
 
 buttonActivate.addEventListener("click", function(){
