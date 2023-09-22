@@ -40,12 +40,9 @@ function beginCountDown(){
     }
 }
 function stopTime(){
-        clearInterval(outputTime);
-    stop = true;
+    clearInterval(outputTime);
 }
 function reset(){
-        clearInterval(outputTime);
-stop = true;
-    userInput = 0;
+    clearInterval(outputTime);
 }
 //this is a testingj
