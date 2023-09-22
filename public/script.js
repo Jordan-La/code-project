@@ -1,4 +1,4 @@
-var userInput = document.getElementById("userInput");
+var userInput = document.getElementById("userInput").innt;
 //userInput = 60; // some test code
 var buttonActivate = document.getElementById("activationButton");
 
@@ -33,6 +33,7 @@ function stopTime(){
     stop = true;
 }
 function reset(){
+stop = true;
     userInput = 0;
 }
 //this is a testingj
