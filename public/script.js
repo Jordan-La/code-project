@@ -29,6 +29,7 @@ var stop = false;
 function beginCountDown(){
     if(time == 0 || stop == true){
         console.log("final time: " + time);
+        display.innerHTML = time;
         clearInterval(outputTime);
         return userInput;
     }
