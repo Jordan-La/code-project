@@ -8,6 +8,7 @@ var buttonActivate = document.getElementById("activationButton");
 buttonActivate.addEventListener("click", function(){
         time = userInput.value;
        outputTime = setInterval(beginCountDown, 1000)
+       display.innerHTML = time;
 });
     
 var buttonStop = document.getElementById("stopButton");
@@ -34,7 +35,6 @@ function beginCountDown(){
         console.log("final time: " + time);
         
         clearInterval(outputTime);
-        display.innerHTML = time;
         return userInput;
     }
 }
