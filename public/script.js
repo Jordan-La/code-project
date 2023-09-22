@@ -27,16 +27,15 @@ buttonReset.addEventListener("click", function(){
 
 var stop = false;
 function beginCountDown(){
-    console.log("user inputted: " + time);
-    display.innerHTML = time;
-    console.log("1 second subtracted")
-    time--;
-
     if(time == 0 || stop == true){
         console.log("final time: " + time);
         clearInterval(outputTime);
         return userInput;
     }
+    console.log("user inputted: " + time);
+    display.innerHTML = time;
+    console.log("1 second subtracted")
+    time--;
 }
 function stopTime(){
     clearInterval(outputTime);
