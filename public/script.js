@@ -1,12 +1,15 @@
 var userInput = document.getElementById("userInput");
-var time = userInput.value;
-var buttonActivate = document.getElementById("activationButton");
+var time = 0;
 var outputTime = 0;
 
-userInput.addEventListener("mouseout", function(){
+var setButton = document.getElementById("setButton");
+
+setButton.addEventListener("click", function(){
         time = userInput.value;
         console.log("updated time inputted lmao" + time);
 });
+
+var buttonActivate = document.getElementById("activationButton");
 
 buttonActivate.addEventListener("click", function(){
        outputTime = setInterval(beginCountDown, 1000)
