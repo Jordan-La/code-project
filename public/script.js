@@ -11,7 +11,7 @@ var buttonReset = document.getElementById("resetButton").addEventListener("click
 var stop = false;
 function beginCountDown(){
     userInput--;
-    console.log("-1 second")
+    console.log("1 second subtracted")
     if(userInput == 0 || stop == true){
         alert("yo ur times out lmao");
         return;
