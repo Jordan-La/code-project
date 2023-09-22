@@ -6,8 +6,20 @@ buttonActivate.addEventListener("click", function(){
         setInterval(beginCountDown, 1000)
 });
     
-var buttonStop = document.getElementById("stopButton").addEventListener("click", stop());
-var buttonReset = document.getElementById("resetButton").addEventListener("click", reset());
+var buttonStop = document.getElementById("stopButton");
+
+buttonStop.addEventListener("click", function(){
+        stop();
+        console.log("Stopping time");
+});
+
+var buttonReset = document.getElementById("resetButton");
+
+buttonReset.addEventListener("click", function(){
+        reset();
+        console.log("Resetting time");
+});
+
 var stop = false;
 function beginCountDown(){
     userInput--;
