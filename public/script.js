@@ -22,10 +22,10 @@ buttonReset.addEventListener("click", function(){
 
 var stop = false;
 function beginCountDown(){
+    console.log("user inputted: " + userInput);
     userInput--;
     console.log("1 second subtracted")
     if(userInput == 0 || stop == true){
-        alert("yo ur times out lmao");
         return;
     }
 }
