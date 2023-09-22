@@ -9,7 +9,7 @@ buttonActivate.addEventListener("click", function(){
 var buttonStop = document.getElementById("stopButton");
 
 buttonStop.addEventListener("click", function(){
-        stop();
+        stopTime();
         console.log("Stopping time");
 });
 
@@ -29,7 +29,7 @@ function beginCountDown(){
         return;
     }
 }
-function stop(){
+function stopTime(){
     stop = true;
 }
 function reset(){
