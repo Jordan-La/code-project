@@ -1,9 +1,12 @@
 var userInput = document.getElementById("userInput");
 var time = userInput.value;
-//userInput = 60; // some test code
 var buttonActivate = document.getElementById("activationButton");
 var outputTime = 0;
 
+userInput.addEventListener("mouseleave", function(){
+        time = userInput.value;
+        console.log("updated time inputted lmao");
+});
 
 buttonActivate.addEventListener("click", function(){
        outputTime = setInterval(beginCountDown, 1000)
