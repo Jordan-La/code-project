@@ -29,11 +29,10 @@ var stop = false;
 function beginCountDown(){
     console.log("user inputted: " + time);
     display.innerHTML = time;
-    time--;
     console.log("1 second subtracted")
+    time--;
     if(time == 0 || stop == true){
         console.log("final time: " + time);
-        display.innerHTML = time;
         clearInterval(outputTime);
         return userInput;
     }
