@@ -1,9 +1,11 @@
 var userInput = document.getElementById("userInput");
 //userInput = 60; // some test code
 var buttonActivate = document.getElementById("activationButton");
+var outputTime = 0;
+
 
 buttonActivate.addEventListener("click", function(){
-        setInterval(beginCountDown, 1000)
+       outputTime = setInterval(beginCountDown, 1000)
 });
     
 var buttonStop = document.getElementById("stopButton");
@@ -26,15 +28,15 @@ function beginCountDown(){
     userInput--;
     console.log("1 second subtracted")
     if(userInput == 0 || stop == true){
-        return;
+        return userInput;
     }
 }
 function stopTime(){
-        clearInterval(beginCountDown);
+        clearInterval(outputTime);
     stop = true;
 }
 function reset(){
-        clearInterval(beginCountDown);
+        clearInterval(outputTime);
 stop = true;
     userInput = 0;
 }
