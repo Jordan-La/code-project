@@ -32,9 +32,9 @@ function beginCountDown(){
     console.log("1 second subtracted")
     if(time == 0 || stop == true){
         console.log("final time: " + time);
-        display.innerHTML = time;
-        clearInterval(outputTime);
         
+        clearInterval(outputTime);
+        display.innerHTML = time;
         return userInput;
     }
 }
