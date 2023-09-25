@@ -47,4 +47,4 @@ function reset(){
     display.innerHTML = time;
     clearInterval(outputTime);
 }
-//this is a testingj
+//this is a testingjj
